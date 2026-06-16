@@ -32,3 +32,13 @@ output "private_route_table_id" {
   description = "ID of the private route table"
   value       = module.vpc.private_route_table_id
 }
+
+output "alb_security_group_id" {
+  description = "Security group ID for ALB"
+  value       = module.security_groups.alb_security_group_id
+}
+
+output "ec2_security_group_id" {
+  description = "Security group ID for EC2"
+  value       = module.security_groups.ec2_security_group_id
+}

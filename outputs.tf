@@ -52,3 +52,13 @@ output "target_group_arn" {
   description = "ARN of the ALB target group"
   value       = module.alb.target_group_arn
 }
+
+output "launch_template_id" {
+  description = "Launch template ID"
+  value       = module.ec2.launch_template_id
+}
+
+output "autoscaling_group_name" {
+  description = "Auto Scaling Group name"
+  value       = module.ec2.autoscaling_group_name
+}

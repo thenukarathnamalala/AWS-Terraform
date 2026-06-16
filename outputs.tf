@@ -42,3 +42,13 @@ output "ec2_security_group_id" {
   description = "Security group ID for EC2"
   value       = module.security_groups.ec2_security_group_id
 }
+
+output "alb_dns_name" {
+  description = "DNS name of the Application Load Balancer"
+  value       = module.alb.alb_dns_name
+}
+
+output "target_group_arn" {
+  description = "ARN of the ALB target group"
+  value       = module.alb.target_group_arn
+}
